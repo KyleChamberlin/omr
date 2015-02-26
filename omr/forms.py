@@ -20,8 +20,8 @@ def read_form(path):
     try:
         with open(path, 'r') as f:
             return yaml.safe_load(f)
-    except yaml.YAMLError, e:
-        print e
+    except yaml.YAMLError:
+        pass
 
 
 DEFAULT = """

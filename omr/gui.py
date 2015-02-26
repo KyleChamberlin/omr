@@ -4,8 +4,8 @@ from collections import OrderedDict
 from pkg_resources import resource_filename
 from subprocess import Popen, PIPE, STDOUT
 import sys
-import Tkinter
-from tkFileDialog import askdirectory
+import tkinter as Tkinter
+from tkinter.filedialog import askdirectory
 
 from omr import FORMS
 

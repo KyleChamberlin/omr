@@ -7,7 +7,7 @@ Run GUI if no arguments are provided.
 import argparse
 import multiprocessing
 import sys
-import Tkinter
+import tkinter as tk
 
 import omr
 
@@ -37,10 +37,10 @@ if __name__ == '__main__':
 
         args.pool.close()
         args.pool.join()
-        print 'completed'
+        print('completed')
 
     else:
-        root = Tkinter.Tk()
+        root = tk.Tk()
         app = omr.Gui(root)
         root.update_idletasks()
         root.mainloop()
